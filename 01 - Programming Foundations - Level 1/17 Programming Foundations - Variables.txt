@@ -119,4 +119,3 @@ Name: Age
 Value: 45
 Address: [Insert specific memory address here]
 Memory Type: RAM (or specific type like DDR)
-Feel free to modify any specific values according to your needs!
