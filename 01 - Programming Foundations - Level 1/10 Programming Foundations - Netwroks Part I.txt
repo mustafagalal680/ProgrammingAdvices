@@ -1,0 +1,32 @@
+
+
+
+What is a network?
+A network is a collection of computers and devices connected together to share resources and information. This can include hardware, software, data, and services. Networks can be wired or wireless and can vary in size from a few connected devices to millions of interconnected systems across the globe.
+
+Why do we need a network?
+We need networks to facilitate communication and resource sharing among devices. Networks allow multiple users to access shared files, printers, and internet connections, improving efficiency and collaboration. They enable communication through email, messaging, and video calls, and are essential for accessing and sharing information in real time.
+
+What is LAN vs WAN?
+LAN (Local Area Network): A LAN is a network that covers a small geographical area, like a home, office, or building. It typically consists of computers and devices that are close to each other and connected through cables or wireless connections. LANs are usually faster and have a higher data transfer rate compared to WANs.
+
+WAN (Wide Area Network): A WAN is a network that covers a large geographical area, such as a city, country, or even the entire globe. It connects multiple LANs and other networks, often using leased telecommunication lines. The internet is the largest example of a WAN.
+
+How do computers communicate together?
+Computers communicate over a network using protocols, which are standardized rules that define how data is transmitted and received. When one computer sends data to another, it is broken down into packets. Each packet contains information such as the sender's address, receiver's address, and the data being transmitted. The packets travel through various network devices (like routers and switches) to reach their destination, where they are reassembled into the original message.
+
+What is Ethernet?
+Ethernet is a widely used networking technology that connects devices in a LAN. It defines the physical and data link layers of the network and uses protocols for data transmission over wired connections. Ethernet can transmit data at varying speeds, including 10 Mbps, 100 Mbps, 1 Gbps, and up to 100 Gbps or more with modern standards.
+
+What is Wireless?
+Wireless refers to communication technologies that transmit data without the use of physical cables. Wireless networks use radio waves, infrared signals, or satellite transmissions to connect devices. Common examples include Wi-Fi, Bluetooth, and cellular networks. Wireless networks provide flexibility and mobility, allowing devices to connect from different locations without being tethered to a cable.
+
+What is a Protocol?
+A protocol is a set of rules and conventions for communication between network devices. Protocols determine how data is formatted, transmitted, and received over a network. They ensure that devices from different manufacturers can communicate effectively. Common protocols include TCP/IP (used for internet communication), HTTP (for web pages), and FTP (for file transfers).
+
+What is Wi-Fi?
+Wi-Fi is a technology that allows devices to connect to a local area network (LAN) wirelessly. It uses radio waves to transmit data between devices, such as computers, smartphones, and routers. Wi-Fi enables internet access and communication without the need for wired connections, providing convenience and mobility for users.
+
+Wi-Fi stands for what?
+Wi-Fi stands for Wireless Fidelity. It is a trademarked term that refers to the technology that enables wireless networking. The term was coined by the Wi-Fi Alliance, an organization that promotes wireless networking standards and certification.
+

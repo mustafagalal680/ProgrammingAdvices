@@ -1,0 +1,97 @@
+
+12 >= 12
+
+Result: True
+Explanation: 12 is equal to 12.
+NOT (12 >= 12)
+
+Result: False
+Explanation: Since 12 >= 12 is True, NOT True is False.
+1 AND 1
+
+Result: True
+Explanation: Both conditions are True, so the result is True.
+(7 = 7) AND (7 > 5)
+
+Result: True
+Explanation: Both 7 = 7 and 7 > 5 are True, so the result is True.
+12 > 7
+
+Result: True
+Explanation: 12 is greater than 7.
+8 < 6
+
+Result: False
+Explanation: 8 is not less than 6.
+8 = 8
+
+Result: True
+Explanation: 8 is equal to 8.
+12 <= 12
+
+Result: True
+Explanation: 12 is equal to 12.
+7 = 5
+
+Result: False
+Explanation: 7 is not equal to 5.
+NOT (12 < 7)
+
+Result: True
+Explanation: 12 is not less than 7, so NOT False is True.
+NOT (8 < 6)
+
+Result: True
+Explanation: 8 is not less than 6, so NOT False is True.
+NOT (8 = 8)
+
+Result: False
+Explanation: 8 is equal to 8, so NOT True is False.
+NOT (12 <= 12)
+
+Result: False
+Explanation: 12 is less than or equal to 12, so NOT True is False.
+NOT (7 = 5)
+
+Result: True
+Explanation: 7 is not equal to 5, so NOT False is True.
+True AND 0
+
+Result: False
+Explanation: 0 is treated as False, so True AND False is False.
+0 OR 1
+
+Result: True
+Explanation: Since 1 is True, the result is True.
+0 OR 0
+
+Result: False
+Explanation: Both conditions are False.
+NOT 0
+
+Result: True
+Explanation: 0 is treated as False, so NOT False is True.
+NOT (1 OR 0)
+
+Result: False
+Explanation: Since 1 OR 0 is True, NOT True is False.
+(7 = 7) AND (7 < 5)
+
+Result: False
+Explanation: 7 = 7 is True, but 7 < 5 is False, so True AND False is False.
+(7 = 7) OR (7 < 5)
+
+Result: True
+Explanation: 7 = 7 is True, so True OR False is True.
+(7 < 7) OR (7 > 5)
+
+Result: True
+Explanation: 7 < 7 is False, but 7 > 5 is True, so False OR True is True.
+NOT (7 = 7) AND (7 > 5)
+
+Result: False
+Explanation: 7 = 7 is True, so NOT True is False. Thus, False AND True is False.
+(7 = 7) AND NOT (7 < 5)
+
+Result: True
+Explanation: 7 = 7 is True, and 7 < 5 is False, so NOT False is True. Therefore, True AND True is True.

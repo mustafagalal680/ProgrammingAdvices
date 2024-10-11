@@ -1,0 +1,101 @@
+1. 6 ÷ 3 + 4 × 2
+   الحل: 
+   = 2 + 8 = 10
+
+2. 5 × (2 + 3) + (2 × 6 × 4 - 12 ÷ 3 - 8 × 3)
+   الحل: 
+   = 5 × 5 + (48 - 4 - 24) 
+   = 25 + 20 = 45
+
+3. 6 × 2 + 5 × 1 + 4 ÷ 2 - 1
+   الحل: 
+   = 12 + 5 + 2 - 1 
+   = 18
+
+4. 4 × 4 - 3 × 3 - 16 ÷ 4
+   الحل: 
+   = 16 - 9 - 4 
+   = 3
+
+5. 20 - (3 × 23 - 5)
+   الحل: 
+   = 20 - (69 - 5) 
+   = 20 - 64 = -44
+
+6. (5 + 2)² - 9 × 3 + 2³
+   الحل: 
+   = 7² - 27 + 8 
+   = 49 - 27 + 8 
+   = 30
+
+7. (7 - √9) × (42 - 3 + 1)
+   الحل: 
+   = (7 - 3) × (42 - 3 + 1) 
+   = 4 × 40 = 160
+
+8. 1 + (2 × (4 - 3 + 1) + 7) - 2
+   الحل: 
+   = 1 + (2 × 2 + 7) - 2 
+   = 1 + 4 + 7 - 2 
+   = 10
+
+9. 10 + 6 × (3 - 2) × 8 ÷ 24 - 1
+   الحل: 
+   = 10 + 6 × 1 × 8 ÷ 24 - 1 
+   = 10 + 2 - 1 = 11
+
+10. (20 - 18)³ ÷ 8 × 3 - 1
+    الحل: 
+    = 2³ ÷ 8 × 3 - 1 
+    = 8 ÷ 8 × 3 - 1 
+    = 1 × 3 - 1 = 2
+
+11. (2 + 1 - 3 + 1 + 4)² - 2 × 4
+    الحل: 
+    = (5)² - 8 
+    = 25 - 8 = 17
+
+-------------------------------------------------
+
+
+1. (5 > 6 and 7 = 7) OR (1 OR 0)
+   الحل:
+   = (False AND True) OR (True)
+   = False OR True
+   = True
+
+2. NOT(5 > 6 and 7 = 7) OR (1 OR 0)
+   الحل:
+   = NOT(False AND True) OR (True)
+   = NOT(False) OR (True)
+   = True OR True
+   = True
+
+3. NOT(5 > 6 and 7 = 7) OR NOT(1 OR 0)
+   الحل:
+   = NOT(False AND True) OR NOT(True)
+   = NOT(False) OR False
+   = True OR False
+   = True
+
+4. NOT(5 > 6 OR 7 = 7) AND NOT(1 OR 0)
+   الحل:
+   = NOT(False OR True) AND NOT(True)
+   = NOT(True) AND False
+   = False AND False
+   = False
+
+5. ((5 > 6 AND 7 <= 8) OR (8 > 1 AND 4 <= 3)) AND True
+   الحل:
+   = ((False AND True) OR (True AND False)) AND True
+   = (False OR False) AND True
+   = False AND True
+   = False
+
+6. ((5 > 6 AND NOT(7 <= 8)) AND (8 > 1 OR 4 <= 3)) OR True
+   الحل:
+   = ((False AND NOT(True)) AND (True OR False)) OR True
+   = ((False AND False) AND True) OR True
+   = (False AND True) OR True
+   = False OR True
+   = True

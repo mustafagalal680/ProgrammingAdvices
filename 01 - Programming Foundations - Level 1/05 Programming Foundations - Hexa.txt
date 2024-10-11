@@ -1,0 +1,14 @@
+12A4 in decimal: 4772
+1C35 in decimal: 7221
+100 in decimal: 256
+115C in decimal: 4444 ​
+
+
+4722 in hexadecimal: 1272
+7221 in hexadecimal: 1C35
+256 in hexadecimal: 100
+4444 in hexadecimal: 115C ​
+
+
+13B4 in binary: 0001001110110100
+A5 in binary: 10100101

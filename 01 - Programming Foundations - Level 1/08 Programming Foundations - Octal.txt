@@ -1,0 +1,17 @@
+100 in octal is 64 in decimal.
+512 in octal is 338 in decimal.
+
+
+
+64 in decimal is 100 in octal.
+330 in decimal is 512 in octal.
+
+
+
+100 in octal is 00100000 in binary.
+512 in octal is 101010010 in binary.
+
+
+
+0100 0000 in octal: 100
+0001 0100 1010 in octal: 124

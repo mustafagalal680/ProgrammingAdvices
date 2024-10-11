@@ -1,0 +1,35 @@
+What is a bit?
+A bit is the smallest unit of data in computing, representing a binary value of either 0 or 1.
+
+What is a crumb?
+A crumb is not a widely used term in computer science. However, in some contexts, it refers to 2 bits. It’s a less common way to describe small data units.
+
+What is a nibble?
+A nibble consists of 4 bits. It can represent 16 different values (from 0000 to 1111 in binary).
+
+What is a byte?
+A byte is a unit of digital information that consists of 8 bits. It can represent 256 different values (from 0 to 255 in decimal).
+
+How many bits in a byte?
+There are 8 bits in a byte.
+
+How many crumbs in a byte?
+If we consider a crumb to be 2 bits, then there are 4 crumbs in a byte (since 8 bits / 2 bits per crumb = 4).
+
+How many nibbles in a byte?
+There are 2 nibbles in a byte (since a nibble consists of 4 bits, and 8 bits / 4 bits per nibble = 2).
+
+How many crumbs in a nibble?
+If a crumb is considered to be 2 bits, then there are 2 crumbs in a nibble (since a nibble is 4 bits).
+
+What is the lower nibble?
+The lower nibble refers to the rightmost 4 bits of a byte. For example, in the byte 10101100, the lower nibble is 1100.
+
+What is the upper nibble?
+The upper nibble refers to the leftmost 4 bits of a byte. In the same byte 10101100, the upper nibble is 1010.
+
+What is LSB? And why do we call it LSB? What’s its value?
+LSB stands for Least Significant Bit, which is the rightmost bit in a binary number. It is called "least significant" because it contributes the least to the overall value. Its value can be either 0 or 1.
+
+What is MSB? And why do we call it MSB? What’s its value?
+MSB stands for Most Significant Bit, which is the leftmost bit in a binary number. It is called "most significant" because it contributes the most to the overall value. Its value can also be either 0 or 1.
