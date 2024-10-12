@@ -1,22 +1,19 @@
-
-
-
 What is a Compiler? And How Does It Work?
 A compiler is a program that translates source code written in a high-level programming language into machine code (object code) that a computer's CPU can execute. The compilation process involves several steps:
-
 Lexical Analysis: The compiler reads the source code and breaks it down into tokens, which are the basic elements (keywords, operators, identifiers).
 Syntax Analysis: The compiler checks the tokens against the grammar rules of the language to ensure the code is syntactically correct, building a syntax tree.
 Semantic Analysis: The compiler checks for semantic errors, such as type mismatches or undeclared variables.
 Optimization: The compiler optimizes the code to improve performance and efficiency.
 Code Generation: The compiler generates the machine code from the optimized syntax tree.
 Code Linking: The final machine code may be linked with other object files or libraries to create an executable file.
+
 What is an Interpreter? And How Does It Work?
 An interpreter is a program that directly executes the instructions written in a high-level programming language without converting them into machine code beforehand. The working process of an interpreter involves:
-
 Reading: The interpreter reads the source code line by line.
 Parsing: It analyzes each line for syntax errors and checks for correct syntax.
 Executing: The interpreter executes the instructions immediately, performing the required operations, such as calculations, variable assignments, or function calls.
 Error Handling: If an error occurs, the interpreter stops execution and reports the error, allowing developers to fix it in real-time.
+
 What is an Assembler?
 An assembler is a program that translates assembly language, which is a low-level programming language closely related to machine code, into machine language (binary code). Assemblers convert mnemonic instructions (human-readable) into the binary instructions that a CPU can execute.
 
