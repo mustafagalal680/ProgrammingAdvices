@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+
+void printSeparator() {
+    for (int i = 0; i < 20; i++) {
+        cout << "*";
+    }
+    cout << endl;
+}
+
+
+int addNumbers(int num1, int num2) {
+    return num1 + num2;
+}
+
+int main() {
+    int number1, number2;
+
+   
+    cout << "Please enter Number1: ";
+    cin >> number1;
+
+   
+    cout << "Please enter Number2: ";
+    cin >> number2;
+
+   
+    printSeparator();
+
+    
+    int result = addNumbers(number1, number2);
+
+   
+    cout << result << endl;
+
+    return 0;
+}

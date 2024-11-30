@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double totalSales, commission;
+
+    // Ask the user to enter total sales
+    cin >> totalSales;
+
+    // Calculate commission based on total sales range
+    if (totalSales > 1000000) {
+        commission = totalSales * 0.01;
+    } else if (totalSales > 500000) {
+        commission = totalSales * 0.02;
+    } else if (totalSales > 100000) {
+        commission = totalSales * 0.03;
+    } else if (totalSales > 50000) {
+        commission = totalSales * 0.05;
+    } else {
+        commission = 0;
+    }
+
+    // Output the calculated commission
+    cout << commission << endl;
+
+    return 0;
+}

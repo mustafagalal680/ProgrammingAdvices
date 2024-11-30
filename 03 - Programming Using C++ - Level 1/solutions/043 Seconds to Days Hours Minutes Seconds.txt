@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int TotalSeconds, NumberOfDays, NumberOfHours, NumberOfMinutes, NumberOfSeconds;
+    
+    // Step 1: Read the number of seconds
+    cout << "Enter the total number of seconds: ";
+    cin >> TotalSeconds;
+    
+   
+    const int SecondsPerDay = 86400;  // 24 * 60 * 60
+    const int SecondsPerHour = 3600;  // 60 * 60
+    const int SecondsPerMinute = 60;  // 60
+    
+   
+    NumberOfDays = TotalSeconds / SecondsPerDay;
+    TotalSeconds = TotalSeconds % SecondsPerDay; 
+    
+   
+    NumberOfHours = TotalSeconds / SecondsPerHour;
+    TotalSeconds = TotalSeconds % SecondsPerHour;  
+    
+  
+    NumberOfMinutes = TotalSeconds / SecondsPerMinute;
+    TotalSeconds = TotalSeconds % SecondsPerMinute;  
+    
+  
+    NumberOfSeconds = TotalSeconds;
+    
+   
+    cout << "Time: " << NumberOfDays << ":" << NumberOfHours << ":"
+         << NumberOfMinutes << ":" << NumberOfSeconds << endl;
+    
+    return 0;
+}

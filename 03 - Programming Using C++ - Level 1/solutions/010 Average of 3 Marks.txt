@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   
+    float mark1, mark2, mark3;
+    cout << "Enter mark 1: ";
+    cin >> mark1;
+    cout << "Enter mark 2: ";
+    cin >> mark2;
+    cout << "Enter mark 3: ";
+    cin >> mark3;
+
+   
+    float avg = (mark1 + mark2 + mark3) / 3;
+
+   
+    cout << "The average of the entered marks is: " << avg << endl;
+
+    return 0;
+}

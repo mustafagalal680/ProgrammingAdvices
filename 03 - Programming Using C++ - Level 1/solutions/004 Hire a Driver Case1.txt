@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int age;
+    string hasDriverLicense;
+
+    // Step 1: Ask the user to enter their age
+    cout << "Enter your age: ";
+    cin >> age;
+
+    // Step 2: Ask if they have a driver's license
+    cout << "Do you have a driver's license? (yes/no): ";
+    cin >> hasDriverLicense;
+
+    // Step 3: Check the conditions and print the result
+    if (age > 21 && (hasDriverLicense == "yes" || hasDriverLicense == "Yes")) {
+        cout << "Hired" << endl;
+    } else {
+        cout << "Rejected" << endl;
+    }
+
+    return 0;
+}

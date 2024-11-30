@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+
+    cout << "Enter number: ";
+    cin >> number;
+
+    cout << "Number^2: " << number * number << endl;
+    cout << "Number^3: " << number * number * number << endl;
+    cout << "Number^4: " << number * number * number * number << endl;
+
+    return 0;
+}

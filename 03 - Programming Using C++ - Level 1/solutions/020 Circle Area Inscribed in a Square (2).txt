@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double A;
+    cout << "Enter the side length of the square (A): ";
+    cin >> A;
+    double PI = 3.14;
+    double area = (PI * (A * A)) / 4;
+    cout << "The area of the inscribed circle is: " << area << endl;
+    return 0;
+}

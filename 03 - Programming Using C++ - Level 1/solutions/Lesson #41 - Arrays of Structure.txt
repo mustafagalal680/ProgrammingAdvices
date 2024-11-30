@@ -1,0 +1,44 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Define a structure to store personal information
+struct Person {
+    string firstName;
+    string lastName;
+    int age;
+    long phone;
+};
+
+// Function to display information of a person
+void displayPersonInfo(const Person& p) {
+    cout << "First Name: " << p.firstName << endl;
+    cout << "Last Name: " << p.lastName << endl;
+    cout << "Age: " << p.age << " Years" << endl;
+    cout << "Phone: " << p.phone << endl;
+    cout << "------------------------------------" << endl;
+}
+
+int main() {
+    // Create an array of two Person structures
+    Person people[2];
+
+    // Input data for the first person
+    people[0].firstName = "Mohammed";
+    people[0].lastName = "Abu-Hodhoud";
+    people[0].age = 44;
+    people[0].phone = 8982788;
+
+    // Input data for the second person
+    people[1].firstName = "Ali";
+    people[1].lastName = "Fadi";
+    people[1].age = 22;
+    people[1].phone = 5234222;
+
+    // Display information for each person using the displayPersonInfo function
+    for (int i = 0; i < 2; ++i) {
+        displayPersonInfo(people[i]);
+    }
+
+    return 0;
+}

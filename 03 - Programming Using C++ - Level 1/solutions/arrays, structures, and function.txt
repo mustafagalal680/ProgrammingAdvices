@@ -1,0 +1,52 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Person {
+    string firstName;
+    string lastName;
+    int age;
+    string phone;
+};
+
+void inputPerson(Person& p) {
+    cin.ignore();
+    cout << "Enter First Name: ";
+    getline(cin, p.firstName);
+    cout << "Enter Last Name: ";
+    getline(cin, p.lastName);
+    cout << "Enter Age: ";
+    cin >> p.age;
+    cin.ignore();
+    cout << "Enter Phone: ";
+    getline(cin, p.phone);
+}
+
+void displayPerson(const Person& p, int index) {
+    cout << "Person " << index + 1 << " Info:\n";
+    cout << "*****************************\n";
+    cout << "First Name: " << p.firstName << endl;
+    cout << "Last Name: " << p.lastName << endl;
+    cout << "Age: " << p.age << " Years.\n";
+    cout << "Phone: " << p.phone << endl;
+    cout << "*****************************\n";
+}
+
+int main() {
+    int n;
+    cout << "Enter number of persons: ";
+    cin >> n;
+
+    Person persons[n];
+
+    for (int i = 0; i < n; ++i) {
+        cout << "Enter details for Person " << i + 1 << ":\n";
+        inputPerson(persons[i]);
+    }
+
+    for (int i = 0; i < n; ++i) {
+        displayPerson(persons[i], i);
+    }
+
+    return 0;
+}

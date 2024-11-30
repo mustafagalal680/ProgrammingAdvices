@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+
+    // Step 1: Ask the user to enter their age
+    cout << "Enter your age: ";
+    cin >> age;
+
+    // Step 2: Check if age is between 18 and 45
+    if (age >= 18 && age <= 45) {
+        cout << "Valid Age" << endl;
+    } else {
+        cout << "Invalid Age" << endl;
+    }
+
+    return 0;
+}

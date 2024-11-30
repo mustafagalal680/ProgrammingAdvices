@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int Num, M;
+    cout << "Enter a number: ";
+    cin >> Num;
+    cout << "Enter the exponent (M): ";
+    cin >> M;
+
+    int P = 1;
+    for (int Counter = 0; Counter < M; Counter++) {
+        P = P * Num;
+    }
+
+    cout << "The result of " << Num << "^" << M << " is: " << P << endl;
+
+    return 0;
+}

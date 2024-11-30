@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double calculateInscribedCircleArea(double a, double b) {
+    double semiPerimeter = (2 * a + b) / 2;
+    double areaOfTriangle = (b * sqrt(a * a - (b * b) / 4)) / 2;
+    double radius = areaOfTriangle / semiPerimeter;
+    return M_PI * radius * radius;
+}
+
+int main() {
+    double a, b;
+
+    cout << "Enter side a: ";
+    cin >> a;
+
+    cout << "Enter base b: ";
+    cin >> b;
+
+    double area = calculateInscribedCircleArea(a, b);
+    cout << "Area of the inscribed circle: " << area << endl;
+
+    return 0;
+}

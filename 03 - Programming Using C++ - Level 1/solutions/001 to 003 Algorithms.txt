@@ -1,0 +1,99 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "My name is John Doe" << endl;
+    return 0;
+}
+--------------------------------------------
+#include <iostream>
+using namespace std;
+
+// Function to print name
+void printName() {
+    cout << "My name is John Doe" << endl;
+}
+
+int main() {
+    printName(); // Call the function
+    return 0;
+}
+------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main() {
+    string name; // Variable to store the name
+
+    cout << "Please enter your name: ";
+    cin >> name; // Input the name from the user
+
+    cout << "Hello, " << name << "!" << endl; // Print the name
+    return 0;
+}
+---------------------------------------------
+#include <iostream>
+using namespace std;
+
+// Function to ask and get the user's name
+string getName() {
+    string name;
+    cout << "Please enter your name: ";
+    cin >> name;
+    return name;
+}
+
+// Function to print the name
+void printName(const string& name) {
+    cout << "Hello, " << name << "!" << endl;
+}
+
+int main() {
+    string userName = getName(); // Call the function to get the name
+    printName(userName); // Call the function to print the name
+    return 0;
+}
+----------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+
+    cout << "Please enter a number: ";
+    cin >> number; // Input the number
+
+    // Check if the number is even or odd
+    if (number % 2 == 0) {
+        cout << "Even" << endl; // Print Even
+    } else {
+        cout << "Odd" << endl; // Print Odd
+    }
+
+    return 0;
+}
+-----------------------------------------------------
+#include <iostream>
+using namespace std;
+
+// Function to check if a number is odd or even
+void checkOddEven(int number) {
+    if (number % 2 == 0) {
+        cout << "Even" << endl; // Print Even
+    } else {
+        cout << "Odd" << endl; // Print Odd
+    }
+}
+
+int main() {
+    int number;
+
+    cout << "Please enter a number: ";
+    cin >> number; // Input the number
+
+    checkOddEven(number); // Call the function to check
+    return 0;
+}
+
+
+

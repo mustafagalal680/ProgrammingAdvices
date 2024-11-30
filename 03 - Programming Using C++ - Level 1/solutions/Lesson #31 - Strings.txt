@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string string1, string2, string3;
+
+    std::cout << "Please enter String1? ";
+    std::getline(std::cin, string1);
+
+    std::cout << "Please Enter String2? ";
+    std::cin >> string2;
+
+    std::cout << "Please Enter String3? ";
+    std::cin >> string3;
+
+    int length1 = string1.length();
+    std::cout << "The Length of String1 is " << length1 << std::endl;
+
+    std::cout << "Characters at 0,2,4,7 are: ";
+    if (length1 > 0) std::cout << string1[0] << " ";
+    if (length1 > 2) std::cout << string1[2] << " ";
+    if (length1 > 4) std::cout << string1[4] << " ";
+    if (length1 > 7) std::cout << string1[7] << " ";
+    std::cout << std::endl;
+
+    std::string concatenated = string2 + string3;
+    std::cout << "Concatenating String2 and String3 = " << concatenated << std::endl;
+
+    std::string finalResult = concatenated + concatenated;
+    std::cout << finalResult << std::endl;
+
+    return 0;
+}

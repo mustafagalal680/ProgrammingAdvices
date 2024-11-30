@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int days, hours, minutes, seconds;
+
+    cout << "Enter number of days: ";
+    cin >> days;
+
+    cout << "Enter number of hours: ";
+    cin >> hours;
+
+    cout << "Enter number of minutes: ";
+    cin >> minutes;
+
+    cout << "Enter number of seconds: ";
+    cin >> seconds;
+
+    // Calculate total seconds
+    int totalSeconds = (days * 24 * 3600) + (hours * 3600) + (minutes * 60) + seconds;
+
+    cout << "Total duration in seconds: " << totalSeconds << " Seconds" << endl;
+
+    return 0;
+}

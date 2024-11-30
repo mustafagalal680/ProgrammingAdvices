@@ -1,0 +1,107 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   
+    bool expr1 = ((5 > 6 && 7 == 7) || (1 || 0));
+    cout << "Expression 1: " << expr1 << endl; // Expected: true
+
+   
+    bool expr2 = (!(5 > 6 && 7 - 7) || (1 || 0));
+    cout << "Expression 2: " << expr2 << endl; // Expected: true
+
+   
+    bool expr3 = (!(5 > 6 && 7 - 7) || !(1 || 0));
+    cout << "Expression 3: " << expr3 << endl; // Expected: true
+
+   
+    bool expr4 = (!(5 > 6 || 7 - 7) && !(1 || 0));
+    cout << "Expression 4: " << expr4 << endl; // Expected: false
+
+    
+    bool expr5 = (((5 > 6 && 7 <= 8) || (8 * 1 && 4 - 3)) && true);
+    cout << "Expression 5: " << expr5 << endl; // Expected: true
+
+   
+    bool expr6 = (((5 > 6 && !(7 - 8)) && (8 > 1 || 4 <= 3)) || true);
+    cout << "Expression 6: " << expr6 << endl; // Expected: true
+
+    return 0;
+}
+-------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    bool expr1 = (12 >= 12);
+    cout << "Expression 1: " << expr1 << endl;
+
+    bool expr2 = !(12 >= 12);
+    cout << "Expression 2: " << expr2 << endl;
+
+    bool expr3 = (1 && 1);
+    cout << "Expression 3: " << expr3 << endl;
+
+    bool expr4 = (77 && 75);
+    cout << "Expression 4: " << expr4 << endl;
+
+    bool expr5 = (12 > 7);
+    cout << "Expression 5: " << expr5 << endl;
+
+    bool expr6 = !(12 < 7);
+    cout << "Expression 6: " << expr6 << endl;
+
+    bool expr7 = (true && 0);
+    cout << "Expression 7: " << expr7 << endl;
+
+    bool expr8 = ((7 == 7) && (7 < 5));
+    cout << "Expression 8: " << expr8 << endl;
+
+    bool expr9 = 86;
+    cout << "Expression 9: " << expr9 << endl;
+
+    bool expr10 = !(86);
+    cout << "Expression 10: " << expr10 << endl;
+
+    bool expr11 = (0 || 1);
+    cout << "Expression 11: " << expr11 << endl;
+
+    bool expr12 = ((7 == 7) || 75);
+    cout << "Expression 12: " << expr12 << endl;
+
+    bool expr13 = (8 == 8);
+    cout << "Expression 13: " << expr13 << endl;
+
+    bool expr14 = !(8 == 8);
+    cout << "Expression 14: " << expr14 << endl;
+
+    bool expr15 = (0 || 0);
+    cout << "Expression 15: " << expr15 << endl;
+
+    bool expr16 = ((7 < 7) || (7 > 5));
+    cout << "Expression 16: " << expr16 << endl;
+
+    bool expr17 = (12 <= 12);
+    cout << "Expression 17: " << expr17 << endl;
+
+    bool expr18 = !(12 <= 12);
+    cout << "Expression 18: " << expr18 << endl;
+
+    bool expr19 = !0;
+    cout << "Expression 19: " << expr19 << endl;
+
+    bool expr20 = (!(7 == 7) && (7 > 5));
+    cout << "Expression 20: " << expr20 << endl;
+
+    bool expr22 = !(7 == 5);
+    cout << "Expression 22: " << expr22 << endl;
+
+    bool expr23 = !(1 || 0);
+    cout << "Expression 23: " << expr23 << endl;
+
+    bool expr24 = ((7 == 7) && !75);
+    cout << "Expression 24: " << expr24 << endl;
+
+    return 0;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  
+    float a, b;
+    cout << "Enter the length (a): ";
+    cin >> a;
+    cout << "Enter the width (b): ";
+    cin >> b;
+
+    
+    float area = a * b;
+
+   
+    cout << "The area of the rectangle is: " << area << endl;
+
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    float a, b;
+    cout << "Enter the height of the isosceles triangle (a): ";
+    cin >> a;
+    cout << "Enter the base of the isosceles triangle (b): ";
+    cin >> b;
+
+  
+    const float PI = 3.14;
+
+   
+    float area = (PI * b * b / 4) * ((2 * a - b) / (2 * a + b));
+
+   
+    cout << "The area of the inscribed circle is: " << area << endl;
+
+    return 0;
+}

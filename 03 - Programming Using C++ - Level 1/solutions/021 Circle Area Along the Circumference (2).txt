@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double L;
+    cout << "Enter the circumference (L): ";
+    cin >> L;
+    double PI = 3.14;
+    double area = (L * L) / (4 * PI);
+    cout << "The area of the circle is: " << area << endl;
+    return 0;
+}

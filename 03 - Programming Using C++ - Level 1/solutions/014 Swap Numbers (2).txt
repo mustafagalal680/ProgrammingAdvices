@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number1, number2;
+
+    cout << "Enter Number1: ";
+    cin >> number1;
+
+    cout << "Enter Number2: ";
+    cin >> number2;
+
+    cout << "Before Swap:\n";
+    cout << number1 << endl;
+    cout << number2 << endl;
+
+    // Swapping the numbers
+    int temp = number1;
+    number1 = number2;
+    number2 = temp;
+
+    cout << "After Swap:\n";
+    cout << number1 << endl;
+    cout << number2 << endl;
+
+    return 0;
+}

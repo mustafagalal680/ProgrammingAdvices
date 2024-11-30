@@ -1,0 +1,102 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+void displayInformation(string name, int age, string city, string country) {
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << " Years" << endl;
+    cout << "City: " << city << endl;
+    cout << "Country: " << country << endl;
+}
+
+int main() {
+   
+    string name = "Mohammed Abu-Hadhoud";
+    int age = 44;
+    string city = "Amman";
+    string country = "Jordan";
+
+    
+    displayInformation(name, age, city, country);
+
+    return 0;
+}
+------------------------------------------------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+void displayMessage(string name, string message, string closing) {
+    cout << message << endl;
+    cout << closing << endl;
+    cout << name << endl;
+}
+
+int main() {
+  
+    string name = "Mohammed Abu-Hadhoud";
+    string message = "I Love Programming! I promise to be the best developer ever!\n"
+                     "I know it will take some time to practice, but I will achieve my goal.";
+    string closing = "Best Regards,";
+
+   
+    displayMessage(name, message, closing);
+
+    return 0;
+}
+------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+
+void printPattern(int rows, int columns) {
+    for (int i = 0; i < rows; i++) { 
+        for (int j = 0; j < columns; j++) { 
+            cout << "*";
+        }
+        cout << endl; 
+    }
+}
+
+int main() {
+   
+    int rows = 4;
+    int columns = 8;
+
+    
+    printPattern(rows, columns);
+
+    return 0;
+}
+------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+
+void printPattern() {
+    int rows = 5;       
+    int columns = 6;   
+
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+         
+            if (j == 0 || j == columns - 1 || i == 2) {
+                cout << "*";
+            } else {
+                cout << " "; 
+            }
+        }
+        cout << endl; 
+    }
+}
+
+int main() {
+   
+    printPattern();
+
+    return 0;
+}
+
+

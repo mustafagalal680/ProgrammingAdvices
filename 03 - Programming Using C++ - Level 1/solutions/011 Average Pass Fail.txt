@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Step 1: Declare variables for marks
+    int mark1, mark2, mark3;
+    double average;
+
+    // Step 2: Ask the user to enter three marks
+    cout << "Enter Mark1: ";
+    cin >> mark1;
+
+    cout << "Enter Mark2: ";
+    cin >> mark2;
+
+    cout << "Enter Mark3: ";
+    cin >> mark3;
+
+    // Step 3: Calculate the average
+    average = (mark1 + mark2 + mark3) / 3.0;
+
+    // Step 4: Display the average
+    cout << "Average: " << average << endl;
+
+    // Step 5: Check if the average is >= 50
+    if (average >= 50) {
+        cout << "PASS" << endl;
+    } else {
+        cout << "FAIL" << endl;
+    }
+
+    return 0;
+}

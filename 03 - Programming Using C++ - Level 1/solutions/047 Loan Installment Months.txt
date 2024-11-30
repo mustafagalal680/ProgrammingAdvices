@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>  
+using namespace std;
+
+int main() {
+    double LoanAmount, MonthlyPayment;
+    
+    
+    cout << "Enter the loan amount: ";
+    cin >> LoanAmount;
+    
+    cout << "Enter the monthly payment: ";
+    cin >> MonthlyPayment;
+    
+  
+    double TotalMonths = LoanAmount / MonthlyPayment;
+    
+   
+    int months = ceil(TotalMonths); 
+    
+   
+    cout << "It will take " << months << " Months to settle the loan." << endl;
+    
+    return 0;
+}

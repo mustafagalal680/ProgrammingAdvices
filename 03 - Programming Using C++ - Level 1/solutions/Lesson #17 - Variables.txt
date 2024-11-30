@@ -1,0 +1,125 @@
+Valid Variable Names
+Age
+✅ Valid
+
+Starts with a letter.
+Contains no spaces or special characters.
+_Age
+✅ Valid
+
+Starts with an underscore, which is allowed.
+Contains no invalid characters.
+X2
+✅ Valid
+
+Starts with a letter.
+Contains no invalid characters.
+MyName
+✅ Valid
+
+Starts with a letter.
+No spaces or special characters.
+--------------------------------------------------
+My-Age
+❌ Invalid
+
+The hyphen (-) is not allowed in variable names because it’s interpreted as a minus operator.
+My Age
+❌ Invalid
+
+Spaces are not allowed in variable names.
+2x
+❌ Invalid
+
+Starts with a number, which is not allowed in variable names.
+My Name
+❌ Invalid
+
+Contains a space, which is not allowed.
+#Name
+❌ Invalid
+
+The hash symbol (#) is not allowed in variable names.
+$Name
+❌ Invalid in most programming languages like Python.
+$ is not allowed unless in specific languages (e.g., PHP, JavaScript).
+N@me
+❌ Invalid
+The @ symbol is not allowed in variable names.
+int
+❌ Invalid
+int is a reserved keyword in most programming languages.
+float
+❌ Invalid
+float is a reserved keyword in most programming languages.
+---------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main() {
+   
+    string name = "Mohammed Abu-Hadhoud";
+    int age = 44;
+    string city = "Amman";
+    string country = "Jordan";
+
+    
+    int monthlySalary = 5000;
+    int yearlySalary = 60000;
+
+   
+    char gender = 'M'; 
+    bool married = true; 
+
+   
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << " Years" << endl;
+    cout << "City: " << city << endl;
+    cout << "Country: " << country << endl;
+    cout << "Monthly Salary: " << monthlySalary << endl;
+    cout << "Yearly Salary: " << yearlySalary << endl;
+    cout << "Gender: " << gender << endl;
+    cout << "Married: " << married << endl;
+
+    return 0;
+}
+-------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main() {
+   
+    int num1 = 20;
+    int num2 = 30;
+    int num3 = 10;
+
+   
+    int total = num1 + num2 + num3;
+
+   
+    cout << num1 << " + " << num2 << " + " << num3 << endl;
+    cout << "------------" << endl;
+    cout << "Total = " << total << endl;
+
+    return 0;
+}
+-------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main() {
+   
+    int currentAge = 25;
+
+    
+    int yearsToAdd = 5;
+
+    
+    int futureAge = currentAge + yearsToAdd;
+
+   
+    cout << "After " << yearsToAdd << " years, you will be " << futureAge << " years old." << endl;
+
+    return 0;
+}
+

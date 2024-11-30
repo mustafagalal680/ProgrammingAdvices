@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double calculateArea(double side, double diagonal) {
+    double otherSide = sqrt(pow(diagonal, 2) - pow(side, 2));
+    return side * otherSide;
+}
+
+int main() {
+    double side, diagonal;
+
+    cout << "Enter side (a): ";
+    cin >> side;
+
+    cout << "Enter diagonal (d): ";
+    cin >> diagonal;
+
+    double area = calculateArea(side, diagonal);
+    cout << "Area: " << area << endl;
+
+    return 0;
+}

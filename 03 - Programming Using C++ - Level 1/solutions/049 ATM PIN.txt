@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int correctPIN = 1234; // The correct PIN code
+    const int userBalance = 7500; // User's balance
+    int enteredPIN;
+
+    while (true) {
+        // Step 1: Ask the user to enter the PIN
+        cout << "Enter your ATM PIN: ";
+        cin >> enteredPIN;
+
+        // Step 2: Check if the entered PIN is correct
+        if (enteredPIN == correctPIN) {
+            // Step 3: Display the balance if the PIN is correct
+            cout << "Your Balance is: " << userBalance << endl;
+            break; // Exit the loop
+        } else {
+            // Step 4: Show an error message if the PIN is incorrect
+            cout << "Wrong PIN. Please try again." << endl;
+        }
+    }
+
+    return 0;
+}

@@ -1,0 +1,42 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Define enums outside the struct
+enum Gender { Male, Female };
+enum MaritalStatus { Single, Married };
+
+struct Person {
+    string name;
+    int age;
+    string city;
+    string country;
+    double monthlySalary;
+    double yearlySalary;
+    Gender gender;
+    MaritalStatus maritalStatus;
+};
+
+int main() {
+    Person person;
+
+    person.name = "Mohammed Abu-Hodhoud";
+    person.age = 44;
+    person.city = "Ammon";
+    person.country = "Jordan";
+    person.monthlySalary = 5000.0;
+    person.yearlySalary = 60000.0;
+    person.gender = Male;
+    person.maritalStatus = Married;
+
+    cout << "Name: " << person.name << endl;
+    cout << "Age: " << person.age << " Years" << endl;
+    cout << "City: " << person.city << endl;
+    cout << "Country: " << person.country << endl;
+    cout << "Monthly Salary: " << person.monthlySalary << endl;
+    cout << "Yearly Salary: " << person.yearlySalary << endl;
+    cout << "Gender: " << (person.gender == Male ? "Male" : "Female") << endl;
+    cout << "Marital Status: " << (person.maritalStatus == Married ? "Married" : "Single") << endl;
+
+    return 0;
+}

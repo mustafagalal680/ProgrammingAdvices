@@ -1,0 +1,63 @@
+#include <iostream>
+
+using namespace std; 
+
+int main() {
+   
+    cout << "*************************************" << endl;
+    cout << "Name: Mohammed Abu-Hadhoud" << endl;
+    cout << "Age: 44 Years." << endl;
+    cout << "City: Amman" << endl;
+    cout << "Country: Jordan." << endl;
+    cout << "*************************************" << endl;
+
+    return 0;
+}
+--------------------------------------------------------------
+#include <iostream> 
+
+using namespace std; 
+
+int main() {
+    
+    for (int i = 0; i < 4; i++) {
+        cout << "************" << endl; 
+    }
+
+    return 0;
+}
+--------------------------------------------------------------
+#include <iostream> 
+
+using namespace std; 
+
+int main() {
+    
+    cout << "I Love Programming!" << endl << endl;
+
+    cout << "I promise to be the best developer ever!" << endl << endl;
+
+    cout << "I know it will take some time to practice, but I will achieve my goal." << endl << endl;
+
+    cout << "Best Regards," << endl;
+    cout << "Mohammed Abu-Hadhoud." << endl;
+
+    return 0; 
+}
+--------------------------------------------------------------
+#include <iostream> 
+
+using namespace std; 
+int main() {
+    
+    cout << "*     *" << endl;
+    cout << "*     *" << endl;
+    cout << "*******" << endl;
+    cout << "*     *" << endl;
+    cout << "*     *" << endl;
+
+    return 0;
+}
+
+
+

@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int pin, attempts = 0;
+    const int correctPin = 1234;
+    const int userBalance = 7500;
+
+    while (attempts < 3) {
+        cout << "Enter your PIN: ";
+        cin >> pin;
+
+        if (pin == correctPin) {
+            cout << "Your Balance is: " << userBalance << endl;
+            return 0;  // Exit the program if the PIN is correct
+        } else {
+            cout << "Wrong PIN" << endl;
+            attempts++;
+        }
+    }
+
+    cout << "Card is locked!" << endl;
+    return 0;
+}

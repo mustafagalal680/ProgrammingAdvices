@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double a, b;
+    cout << "Enter the side length of the triangle (a): ";
+    cin >> a;
+    cout << "Enter the base length of the triangle (b): ";
+    cin >> b;
+    double PI = 3.14;
+    double area = (PI * b * b / 4) * ((2 * a - b) / (2 * a + b));
+    cout << "The area of the inscribed circle is: " << area << endl;
+    return 0;
+}

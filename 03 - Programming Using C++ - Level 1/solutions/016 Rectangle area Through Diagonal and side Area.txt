@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double a, d;
+    cout << "Enter the side (a): ";
+    cin >> a;
+    cout << "Enter the diagonal (d): ";
+    cin >> d;
+    double area = a * sqrt(d * d - a * a);
+    cout << "The area of the rectangle is: " << area << endl;
+    return 0;
+}

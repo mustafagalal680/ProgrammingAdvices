@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double calculateCircleAreaFromDiameter(double diameter) {
+    double radius = diameter / 2;
+    return M_PI * radius * radius;
+}
+
+int main() {
+    double diameter;
+
+    cout << "Enter diameter (D): ";
+    cin >> diameter;
+
+    double area = calculateCircleAreaFromDiameter(diameter);
+    cout << "Area: " << area << endl;
+
+    return 0;
+}

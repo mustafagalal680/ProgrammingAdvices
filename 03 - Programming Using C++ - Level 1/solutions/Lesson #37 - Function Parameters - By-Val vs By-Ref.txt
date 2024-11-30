@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+void swapByRef(int &a, int &b) {  // & indicates pass-by-reference
+    int temp = a;
+    a = b;
+    b = temp;
+    cout << "Inside swapByRef: a = " << a << ", b = " << b << endl;
+}
+
+int main() {
+    int num1 = 5, num2 = 10;
+    cout << "Before swapByRef: num1 = " << num1 << ", num2 = " << num2 << endl;
+    swapByRef(num1, num2);  // Call by reference
+    cout << "After swapByRef: num1 = " << num1 << ", num2 = " << num2 << endl;
+    return 0;
+}

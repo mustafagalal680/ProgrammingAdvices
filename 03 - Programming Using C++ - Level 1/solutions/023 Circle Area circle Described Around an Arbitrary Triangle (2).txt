@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+double calculateCircumscribedCircleArea(double a, double b, double c) {
+    double semiPerimeter = (a + b + c) / 2;
+    double areaOfTriangle = sqrt(semiPerimeter * (semiPerimeter - a) * (semiPerimeter - b) * (semiPerimeter - c));
+    double radius = (a * b * c) / (4 * areaOfTriangle);
+    return M_PI * radius * radius;
+}
+
+int main() {
+    double a, b, c;
+
+    cout << "Enter side a: ";
+    cin >> a;
+
+    cout << "Enter side b: ";
+    cin >> b;
+
+    cout << "Enter side c: ";
+    cin >> c;
+
+    double area = calculateCircumscribedCircleArea(a, b, c);
+    cout << "Area of the circumscribed circle: " << area << endl;
+
+    return 0;
+}

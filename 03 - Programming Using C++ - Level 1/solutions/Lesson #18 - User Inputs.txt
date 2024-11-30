@@ -1,0 +1,97 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+   
+    string name, city, country, gender;
+    int age, married;
+    double monthlySalary, yearlySalary;
+
+    cout << "Enter your Name: ";
+    getline(cin, name); 
+
+    cout << "Enter your Age: ";
+    cin >> age;
+
+    cout << "Enter your City: ";
+    cin.ignore(); 
+    getline(cin, city);
+
+    cout << "Enter your Country: ";
+    getline(cin, country);
+
+    cout << "Enter your Monthly Salary: ";
+    cin >> monthlySalary;
+
+    cout << "Enter your Yearly Salary: ";
+    cin >> yearlySalary;
+
+    cout << "Enter your Gender (M/F): ";
+    cin >> gender;
+
+    cout << "Are you Married? (1 for Yes, 0 for No): ";
+    cin >> married;
+
+    
+    cout << "\n----- User Information -----\n";
+    cout << "Name: " << name << endl;
+    cout << "Age: " << age << " Years." << endl;
+    cout << "City: " << city << endl;
+    cout << "Country: " << country << endl;
+    cout << "Monthly Salary: " << monthlySalary << endl;
+    cout << "Yearly Salary: " << yearlySalary << endl;
+    cout << "Gender: " << gender << endl;
+    cout << "Married: " << (married == 1 ? "Yes" : "No") << endl;
+
+    return 0;
+}
+--------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number, total = 0;
+    char choice;
+
+    cout << "Enter numbers (end input with '='):\n";
+
+    while (true) {
+        cout << "Enter a number: ";
+        cin >> number;
+        total += number;
+
+        cout << "Do you want to add another number? (+ for yes, = to finish): ";
+        cin >> choice;
+
+        if (choice == '=') {
+            break;
+        } else if (choice != '+') {
+            cout << "Invalid input! Please use '+' to continue or '=' to finish.\n";
+        }
+    }
+
+    cout << "--------------\n";
+    cout << "Total = " << total << endl;
+
+    return 0;
+}
+--------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+
+    
+    cout << "Enter your age: ";
+    cin >> age;
+
+    
+    int ageIn5Years = age + 5;
+
+    
+    cout << "After 5 years, you will be " << ageIn5Years << " years old." << endl;
+
+    return 0;
+}

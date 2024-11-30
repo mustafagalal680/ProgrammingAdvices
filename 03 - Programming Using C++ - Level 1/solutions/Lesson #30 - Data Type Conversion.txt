@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+
+using namespace std;
+
+int main() {
+    string st1 = "43.22";
+
+    double dValue;
+    stringstream(st1) >> dValue;
+    float fValue = static_cast<float>(dValue);
+    int iValue = static_cast<int>(dValue);
+
+    cout << "Original string: " << st1 << endl;
+    cout << "Converted to double: " << dValue << endl;
+    cout << "Converted to float: " << fValue << endl;
+    cout << "Converted to int: " << iValue << endl;
+
+    int N1 = 20;
+    string strN1 = to_string(N1);
+    cout << "Integer N1: " << N1 << " converted to string: " << strN1 << endl;
+
+    double N2 = 33.5;
+    string strN2 = to_string(N2);
+    cout << "Double N2: " << N2 << " converted to string: " << strN2 << endl;
+
+    float N3 = 55.23;
+    string strN3 = to_string(N3);
+    int intN3 = static_cast<int>(N3);
+
+    cout << "Float N3: " << N3 << " converted to string: " << strN3 << endl;
+    cout << "Float N3: " << N3 << " converted to int: " << intN3 << endl;
+
+    return 0;
+}

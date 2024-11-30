@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int mark;
+
+    // Step 1: Ask the user to enter the mark
+    cout << "Enter your mark: ";
+    cin >> mark;
+
+    // Step 2: Check if the mark is greater than or equal to 50
+    if (mark >= 50) {
+        cout << "PASS" << endl;
+    } else {
+        cout << "Fail" << endl;
+    }
+
+    return 0;
+}

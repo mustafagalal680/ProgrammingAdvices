@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   
+    double TotalBill, CashPaid;
+    cout << "Enter the total bill: ";
+    cin >> TotalBill;
+    cout << "Enter the cash paid: ";
+    cin >> CashPaid;
+
+    
+    double Remainder = CashPaid - TotalBill;
+
+    
+    cout << "Remainder (change to be returned): " << Remainder << endl;
+
+    return 0;
+}

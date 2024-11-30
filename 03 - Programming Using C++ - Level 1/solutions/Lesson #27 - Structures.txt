@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Person {
+    string name;
+    int age;
+    string city;
+    string country;
+    double monthlySalary;
+    double yearlySalary;
+    char gender;
+    bool married;
+};
+
+int main() {
+    Person person;
+
+    person.name = "Mohammed Abu-Hodhoud";
+    person.age = 44;
+    person.city = "Ammon";
+    person.country = "Jordan";
+    person.monthlySalary = 5000.0;
+    person.yearlySalary = 60000.0;
+    person.gender = 'M';
+    person.married = true;
+
+    cout << "Name: " << person.name << endl;
+    cout << "Age: " << person.age << " Years" << endl;
+    cout << "City: " << person.city << endl;
+    cout << "Country: " << person.country << endl;
+    cout << "Monthly Salary: " << person.monthlySalary << endl;
+    cout << "Yearly Salary: " << person.yearlySalary << endl;
+    cout << "Gender: " << person.gender << endl;
+    cout << "Married: " << (person.married ? "Yes" : "No") << endl;
+
+    return 0;
+}
