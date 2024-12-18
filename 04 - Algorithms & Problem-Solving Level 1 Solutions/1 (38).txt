@@ -1,0 +1,14 @@
+ #include <iostream> 
+#include <string> 
+#include <cmath>
+using namespace std; 
+
+    int main() 
+    { 
+        double Pi=3.14;
+        double D;
+        cout<<"enter the D?\n";
+        cin>>D;
+        cout<<(Pi*D*D)/4<<endl;
+ 
+    } 

@@ -1,0 +1,15 @@
+
+#include <iostream>
+using namespace std;
+
+
+
+int main()
+{
+    string Name;
+   cout<<"Enter your name?\n";
+   cin>>Name;
+   cout<<"your name is "<<Name<<endl;
+
+    return 0;
+}

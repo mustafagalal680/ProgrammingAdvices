@@ -1,0 +1,12 @@
+#include <cmath>
+#include <iostream>
+using namespace std;
+int main()
+{
+    double a,b;
+    cout<<"enter a and b?\n";
+    cin>>a>>b;
+    cout<<a*(sqrt((b*b)-(a*a)));
+
+    return 0;
+}
