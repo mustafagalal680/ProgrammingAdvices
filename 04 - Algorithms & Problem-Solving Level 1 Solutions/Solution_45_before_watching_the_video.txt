@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int month;
+    while (true) {
+        cout << "Enter the month: ";
+        cin >> month;
+
+        switch (month) {
+            case 1: cout << "January" << endl; return 0;
+            case 2: cout << "February" << endl; return 0;
+            case 3: cout << "March" << endl; return 0;
+            case 4: cout << "April" << endl; return 0;
+            case 5: cout << "May" << endl; return 0;
+            case 6: cout << "June" << endl; return 0;
+            case 7: cout << "July" << endl; return 0;
+            case 8: cout << "August" << endl; return 0;
+            case 9: cout << "September" << endl; return 0;
+            case 10: cout << "October" << endl; return 0;
+            case 11: cout << "November" << endl; return 0;
+            case 12: cout << "December" << endl; return 0;
+            default: cout << "Wrong Month, please try again." << endl;
+        }
+    }
+}

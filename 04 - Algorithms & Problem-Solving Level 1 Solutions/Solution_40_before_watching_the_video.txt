@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double BillValue, serviceFee, salesTax, TotalBill;
+    cin >> BillValue;
+    serviceFee = BillValue * 0.10;
+    salesTax = BillValue * 0.16;
+    TotalBill = BillValue + serviceFee + salesTax;
+    cout << TotalBill << endl;
+    return 0;
+}

@@ -1,0 +1,14 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    double Pi=3.14;
+    double l;
+    cout<<"enter L ? \n";
+    cin>>l;
+    cout<<(l*l)/(4*Pi);
+    
+
+    return 0;
+}

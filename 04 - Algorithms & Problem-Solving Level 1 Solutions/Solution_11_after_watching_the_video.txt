@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+enum enPassFail { fail = 0, pass = 1 };
+
+void ReadMarks(int& Mark1, int& Mark2, int& Mark3) {
+    cout << "Enter 3 Marks?\n";
+    cin >> Mark1 >> Mark2 >> Mark3;
+}
+
+int SumMarks(int Mark1, int Mark2, int Mark3) {
+    return Mark1 + Mark2 + Mark3;
+}
+
+int CalculateAverage(int Sum) {
+    return Sum / 3;
+}
+
+enPassFail CheckResult(int Average) {
+    if (Average >= 50) {
+        return enPassFail::pass;
+    } else {
+        return enPassFail::fail;
+    }
+}
+
+void PrintResult(enPassFail Result) {
+    if (Result == enPassFail::pass) {
+        cout << "Pass\n";
+    } else {
+        cout << "Fail\n";
+    }
+}
+
+int main() {
+    int Mark1, Mark2, Mark3;
+
+    ReadMarks(Mark1, Mark2, Mark3);
+
+    int Total = SumMarks(Mark1, Mark2, Mark3);
+
+    int Avg = CalculateAverage(Total);
+
+   
+    enPassFail Result = CheckResult(Avg);
+
+  
+    PrintResult(Result);
+
+    return 0;
+}

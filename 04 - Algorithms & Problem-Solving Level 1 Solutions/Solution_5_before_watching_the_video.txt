@@ -1,0 +1,29 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int Age;
+    bool DriverLicense;
+    bool HasRecommendation;
+
+    
+    cout<<"enter your age?\n";
+    cin>>Age;
+    cout<<"do you have a driver license 1 / 0?\n";
+    cin>>DriverLicense;
+    cout<<"do you have a Recommendation?\n";
+    cin>>HasRecommendation;
+
+
+    if(Age>21&&DriverLicense==1||HasRecommendation==1){
+        cout<<"Hired\n";
+    }
+    else{
+        cout<<"Rejected\n";
+    }
+
+
+    return 0;
+}

@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    /*
+ Step 2: a = Num * Num.
+ Step 3: b = Num * Num * Num.
+ Step 4: c = Num * Num * Num * Num.
+    */
+    int Num;
+    cin>>Num;
+    cout<<Num * Num<<endl;
+    cout<<Num * Num * Num<<endl;
+    cout<<Num * Num * Num * Num<<endl;
+
+
+    return 0;
+}
