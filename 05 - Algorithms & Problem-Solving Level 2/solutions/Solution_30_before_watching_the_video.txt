@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main() {
+    srand((unsigned)time(NULL));
+
+    int arr1[100], arr2[100], sumArr[100];
+    int arrLength;
+
+    cin >> arrLength;
+
+    for (int i = 0; i < arrLength; i++) {
+        arr1[i] = rand() % 100 + 1;
+        arr2[i] = rand() % 100 + 1;
+    }
+
+    for (int i = 0; i < arrLength; i++)
+        cout << arr1[i] << " ";
+    cout << "\n";
+
+    for (int i = 0; i < arrLength; i++)
+        cout << arr2[i] << " ";
+    cout << "\n";
+
+    for (int i = 0; i < arrLength; i++)
+        sumArr[i] = arr1[i] + arr2[i];
+
+    for (int i = 0; i < arrLength; i++)
+        cout << sumArr[i] << " ";
+    cout << "\n";
+
+    return 0;
+}

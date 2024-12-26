@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main() {
+    srand((unsigned)time(NULL)); 
+
+    int NumberOfKeys;
+    do {
+        cout << "Please enter how many keys to generate: ";
+        cin >> NumberOfKeys;
+    } while (NumberOfKeys < 0);
+
+    for (int i = 1; i <= NumberOfKeys; i++) {
+        string Key = "";
+        for (int j = 0; j < 4; j++) {
+            for (int k = 0; k < 4; k++) {
+                Key += char(rand() % (90 - 65 + 1) + 65); 
+            }
+            if (j < 3) Key += "-"; 
+        }
+        cout << "Key [" << i << "] : " << Key << endl;
+    }
+
+    return 0;
+}

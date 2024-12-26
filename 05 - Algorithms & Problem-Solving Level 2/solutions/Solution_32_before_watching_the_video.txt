@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main() 
+{
+    srand((unsigned)time(NULL));
+    int arr[100], arr2[100], arrLength;
+    
+    cout << "Enter number of elements: \n";
+    cin >> arrLength;
+    
+    for (int i = 0; i < arrLength; i++)
+        arr[i] = rand() % 100 + 1;
+    
+    for (int i = 0; i < arrLength; i++)
+        arr2[i] = arr[arrLength - 1 - i];
+    
+    cout << "\nArray 1 Elements: \n";
+    for (int i = 0; i < arrLength; i++)
+        cout << arr[i] << " ";
+    
+    cout << "\nArray 2 Elements after copy: \n";
+    for (int i = 0; i < arrLength; i++)
+        cout << arr2[i] << " ";
+    
+    cout << "\n";
+}

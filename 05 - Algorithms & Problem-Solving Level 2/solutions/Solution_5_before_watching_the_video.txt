@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Num;
+    cout << "Enter a number?\n";
+    cin >> Num;
+
+    int Temp = Num;
+    while (Temp > 0) {
+        int Remainder = Temp % 10;
+        Temp = Temp / 10;
+        cout << Remainder << endl;
+    }
+
+    return 0;
+}

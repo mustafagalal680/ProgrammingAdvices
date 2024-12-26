@@ -1,0 +1,27 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> numbers;
+    int number;
+    string response;
+
+    do {
+        cout << "Enter a number: ";
+        cin >> number;
+        numbers.push_back(number);
+
+        cout << "Do you want to add another number? (yes/no): ";
+        cin >> response;
+
+    } while (response == "yes" || response == "Yes");
+
+    cout << "All numbers entered are: ";
+    for (int num : numbers) {
+        cout << num << " ";
+    }
+    cout << endl;
+
+    return 0;
+}

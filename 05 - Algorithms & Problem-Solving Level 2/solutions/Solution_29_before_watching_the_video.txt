@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main()
+{
+    srand((unsigned)time(NULL));
+    int arr[100], arrPrime[100], arrLength, primeCount = 0;
+
+    cout << "Enter number of elements: \n";
+    cin >> arrLength;
+
+    for (int i = 0; i < arrLength; i++) {
+        arr[i] = rand() % 100 + 1;
+    }
+
+    for (int i = 0; i < arrLength; i++) {
+        bool isPrime = true;
+        if (arr[i] <= 1) isPrime = false;
+        for (int j = 2; j * j <= arr[i]; j++) {
+            if (arr[i] % j == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) arrPrime[primeCount++] = arr[i];
+    }
+
+    cout << "\nArray 1 elements:\n";
+    for (int i = 0; i < arrLength; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << "\n";
+
+    cout << "\nPrime Numbers in Array2:\n";
+    for (int i = 0; i < primeCount; i++) {
+        cout << arrPrime[i] << " ";
+    }
+    cout << "\n";
+
+    return 0;
+}

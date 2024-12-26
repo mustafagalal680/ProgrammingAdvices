@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+void printNumbers(int M, int N) {
+    if (M < N) return;
+    cout << M << " ";
+    printNumbers(M - 1, N);
+}
+
+int main() {
+    int M, N;
+
+    cout << "Enter M (starting number): ";
+    cin >> M;
+
+    cout << "Enter N (ending number): ";
+    cin >> N;
+
+    if (M >= N) {
+        printNumbers(M, N);
+    }
+    else {
+        cout << "M must be greater than or equal to N" << endl;
+    }
+
+    return 0;
+}
+-----------------------------------------------------------------
+#include <iostream>
+using namespace std;
+
+int power(int N, int M) {
+    if (M == 0) return 1; 
+    return N * power(N, M - 1);
+}
+
+int main() {
+    int N, M;
+    cout << "Enter the base number (N): ";
+    cin >> N;
+    cout << "Enter the power (M): ";
+    cin >> M;
+
+    cout << N << "^" << M << " = " << power(N, M) << endl;
+
+    return 0;
+}

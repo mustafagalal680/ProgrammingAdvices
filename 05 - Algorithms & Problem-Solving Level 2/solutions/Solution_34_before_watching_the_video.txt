@@ -1,0 +1,45 @@
+#include <iostream> 
+#include <cstdlib> 
+using namespace std; 
+
+int main() 
+{ 
+    srand((unsigned)time(NULL)); 
+
+    int arr[100], arrLength; 
+    cout << "Enter number of elements : \n"; 
+    cin >> arrLength; 
+
+    for (int i = 0; i < arrLength; i++) 
+        arr[i] = rand() % 100 + 1; 
+
+    cout << "\nArray 1 Elements : \n"; 
+    for (int i = 0; i < arrLength; i++) 
+        cout << arr[i] << " "; 
+    cout << "\n"; 
+
+    int Number; 
+    cout << "\nPlease enter a number to search for?\n"; 
+    cin >> Number; 
+    cout << "\nNumber you are looking for is : " << Number << endl; 
+
+    short NumberPosition = -1; 
+    for (int i = 0; i < arrLength; i++) 
+    { 
+        if (arr[i] == Number) 
+        { 
+            NumberPosition = i; 
+            break; 
+        } 
+    } 
+
+    if (NumberPosition == -1) 
+    { 
+        cout << "\nThe number is not found :-( \n"; 
+    } 
+    else 
+    { 
+        cout << "The number found at position : " << NumberPosition << endl; 
+        cout << "The number found its order : " << NumberPosition + 1 << endl; 
+    } 
+}

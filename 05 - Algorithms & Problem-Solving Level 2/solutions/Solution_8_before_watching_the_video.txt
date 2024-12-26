@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int Number, DigitToCheck, FreqCount = 0;
+    cout << "Enter a positive number: ";
+    cin >> Number;
+
+    cout << "Enter a digit to check: ";
+    cin >> DigitToCheck;
+
+    while (Number > 0) {
+        if (Number % 10 == DigitToCheck) {
+            FreqCount++;
+        }
+        Number /= 10;
+    }
+
+    cout << "\nDigit " << DigitToCheck << " appears " 
+         << FreqCount << " time(s).\n";
+
+    return 0;
+}

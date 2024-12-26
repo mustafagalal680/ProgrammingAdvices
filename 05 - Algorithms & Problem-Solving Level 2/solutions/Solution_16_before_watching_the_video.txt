@@ -1,0 +1,15 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    for (int a = 65;a <= 90;a++) {
+        for (int b = 65;b <= 90;b++) {
+            for (int c = 65;c <= 90;c++) {
+                cout << char(a) << char(b) << char(c) << endl;
+            }
+        }
+    }
+
+    return 0;
+}

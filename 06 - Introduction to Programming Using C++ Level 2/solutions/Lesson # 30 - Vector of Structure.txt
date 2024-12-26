@@ -1,0 +1,46 @@
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+struct Employee {
+    string name;
+    int age;
+    string position;
+};
+
+int main() {
+    vector<Employee> employees;
+    char choice;
+
+    do {
+        Employee emp;
+
+        cout << "Enter employee name: ";
+        cin.ignore();
+        getline(cin, emp.name);
+
+        cout << "Enter employee age: ";
+        cin >> emp.age;
+
+        cout << "Enter employee position: ";
+        cin.ignore();
+        getline(cin, emp.position);
+
+        employees.push_back(emp);
+
+        cout << "Do you want to add another employee? (y/n): ";
+        cin >> choice;
+
+    } while (choice == 'y' || choice == 'Y');
+
+    cout << "\nList of Employees:\n";
+    for (size_t i = 0; i < employees.size(); i++) {
+        cout << "Employee " << i + 1 << ":\n";
+        cout << "Name: " << employees[i].name << "\n";
+        cout << "Age: " << employees[i].age << "\n";
+        cout << "Position: " << employees[i].position << "\n\n";
+    }
+
+    return 0;
+}

@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "\t\tMultiplication Table From 1 to 10 \n";
+    
+    cout << "     "; 
+    for (int i = 1; i <= 10; i++) {
+        cout << i << "   ";  
+    }
+    cout << "\n";
+    cout << "---------------------------------------------------------\n";
+    
+    for (int a = 1; a <= 10; a++) {
+        cout << a << " | ";  
+        for (int b = 1; b <= 10; b++) {
+            cout << a * b << "   ";  
+        }
+        cout << "\n";  
+    }
+    return 0;
+}

@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Num;
+    cout << "Enter a number: ";
+    cin >> Num;
+
+    int Temp = Num;
+    int Reversed = 0;
+
+ 
+    while (Temp > 0) {
+        int Remainder = Temp % 10;
+        Temp = Temp / 10;
+        Reversed = Reversed * 10 + Remainder;
+    }
+    
+    int Num2 = Reversed;
+    int Temp2 = Num2;
+   
+    while (Temp2 > 0) {
+        int Remainder2 = Temp2 % 10;
+        Temp2 = Temp2 / 10;
+        cout << Remainder2 << endl; 
+    }
+
+    return 0;
+}

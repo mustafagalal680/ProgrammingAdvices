@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int Num;
+    cout << "Enter a number: ";
+    cin >> Num;
+
+    int OriginalNum = Num; 
+    int Num2 = 0; 
+
+    while (Num > 0) {
+        int remainder = Num % 10; 
+        Num2 = Num2 * 10 + remainder;ا
+        Num = Num / 10; 
+    }
+
+    if (Num2 == OriginalNum) { 
+        cout << "Palindrome" << endl;
+    } else {
+        cout << "Not palindrome" << endl;
+    }
+
+    return 0;
+}

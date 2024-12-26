@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{ 
+    int Number;
+    cout << "Please enter the main Number: ";
+    cin >> Number;
+    
+    while (Number <= 0) {
+        cout << "Please enter a positive number: ";
+        cin >> Number;
+    }
+
+    for (int i = 0; i < 10; i++)  
+    { 
+        int TempNumber = Number, FreqCount = 0;
+        while (TempNumber > 0) 
+        { 
+            if (TempNumber % 10 == i) FreqCount++;
+            TempNumber /= 10;
+        }
+        if (FreqCount > 0) 
+            cout << "Digit " << i << " Frequency is " << FreqCount << " Time(s).\n";
+    } 
+    return 0; 
+}

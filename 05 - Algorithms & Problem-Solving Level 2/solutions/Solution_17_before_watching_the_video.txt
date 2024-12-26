@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    string Password;
+    cout << "Please enter a 3-Letter Password (all capital) ? \n";
+    cin >> Password;
+
+    int Counter = 0;
+
+    for (char i = 'A'; i <= 'Z'; i++) {
+        for (char j = 'A'; j <= 'Z'; j++) {
+            for (char k = 'A'; k <= 'Z'; k++) {
+                Counter++;
+                string Word = { i, j, k }; 
+
+                cout << "Trial [" << Counter << "] : " << Word << endl;
+                if (Word == Password) {
+                    cout << "\nPassword is : " << Password << endl;
+                    cout << "Found after " << Counter << " Trial(s)\n";
+                    return 0;
+                }
+            }
+        }
+    }
+
+    return 0;
+}

@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int Num;
+	cin >> Num;
+	string result = (Num > 0) ? "Positive" : "Negative";
+	cout << result;
+	return 0;
+}
+------------------------------------------------------------
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	int Num;
+	cin >> Num;
+	string result = (Num == 0) ? "Zero" : (Num > 0) ? "Positive" : "Negative";
+	cout << result;
+	return 0;
+}

@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+
+
+int main() 
+{ 
+    int Num;
+    cin>>Num;
+    for(int i=Num;i>0;i--){
+        for(int j=0;j<i;j++){
+            cout<<i;
+        }
+        cout<<endl;
+    }
+    
+    return 0;
+}

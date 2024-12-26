@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main()
+{
+    srand((unsigned)time(NULL));
+
+    int arr[100], arrLength;
+
+    cout << "Enter number of elements: \n";
+    cin >> arrLength;
+
+    for (int i = 0; i < arrLength; i++)
+        arr[i] = rand() % (100 - 1 + 1) + 1;
+
+    cout << "\nArray Elements: ";
+    for (int i = 0; i < arrLength; i++)
+        cout << arr[i] << " ";
+
+    int Sum = 0;
+    for (int i = 0; i < arrLength; i++)
+    {
+        Sum = Sum + arr[i];
+    }
+
+    cout << "\nAverage Numbers is: " << Sum/ arrLength << endl;
+
+    return 0;
+}

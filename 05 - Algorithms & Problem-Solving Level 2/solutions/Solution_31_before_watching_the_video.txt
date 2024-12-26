@@ -1,0 +1,43 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+    srand((unsigned)time(NULL));
+
+    int arr[100];
+    int arrLength = 0;
+
+    do
+    {
+        cout << "Enter number of elements : ";
+        cin >> arrLength;
+    } while (arrLength <= 0);
+
+    for (int i = 0; i < arrLength; i++)
+    {
+        arr[i] = i + 1;
+    }
+
+    cout << "\nArray elements before shuffle: \n";
+    for (int i = 0; i < arrLength; i++)
+        cout << arr[i] << " ";
+    cout << "\n";
+
+    for (int i = 0; i < arrLength; i++)
+    {
+        int RandNum1 = rand() % arrLength;
+        int RandNum2 = rand() % arrLength;
+        swap(arr[RandNum1], arr[RandNum2]);
+    }
+
+    cout << "\nArray elements after shuffle: \n";
+    for (int i = 0; i < arrLength; i++)
+        cout << arr[i] << " ";
+    cout << "\n";
+
+    return 0;
+}

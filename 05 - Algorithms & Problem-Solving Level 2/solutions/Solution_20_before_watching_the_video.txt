@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main()
+{
+    srand((unsigned)time(NULL));
+
+    auto RandomNumber = [](int From, int To) {
+        return rand() % (To - From + 1) + From;
+        };
+
+    auto GetRandomCharacter = [&](int CharType) {
+        switch (CharType)
+        {
+        case 1: return char(RandomNumber(97, 122));
+        case 2: return char(RandomNumber(65, 90));
+        case 3: return char(RandomNumber(33, 47));
+        case 4: return char(RandomNumber(48, 57));
+        }
+        return ' ';
+        };
+
+    cout << GetRandomCharacter(1) << endl;
+    cout << GetRandomCharacter(2) << endl;
+    cout << GetRandomCharacter(3) << endl;
+    cout << GetRandomCharacter(4) << endl;
+}
